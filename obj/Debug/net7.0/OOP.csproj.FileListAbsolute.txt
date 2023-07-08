@@ -1,0 +1,15 @@
+C:\Users\Pre-Installed User\Desktop\OOP\OOP\bin\Debug\net7.0\OOP.exe
+C:\Users\Pre-Installed User\Desktop\OOP\OOP\bin\Debug\net7.0\OOP.deps.json
+C:\Users\Pre-Installed User\Desktop\OOP\OOP\bin\Debug\net7.0\OOP.runtimeconfig.json
+C:\Users\Pre-Installed User\Desktop\OOP\OOP\bin\Debug\net7.0\OOP.dll
+C:\Users\Pre-Installed User\Desktop\OOP\OOP\bin\Debug\net7.0\OOP.pdb
+C:\Users\Pre-Installed User\Desktop\OOP\OOP\obj\Debug\net7.0\OOP.csproj.AssemblyReference.cache
+C:\Users\Pre-Installed User\Desktop\OOP\OOP\obj\Debug\net7.0\OOP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pre-Installed User\Desktop\OOP\OOP\obj\Debug\net7.0\OOP.AssemblyInfoInputs.cache
+C:\Users\Pre-Installed User\Desktop\OOP\OOP\obj\Debug\net7.0\OOP.AssemblyInfo.cs
+C:\Users\Pre-Installed User\Desktop\OOP\OOP\obj\Debug\net7.0\OOP.csproj.CoreCompileInputs.cache
+C:\Users\Pre-Installed User\Desktop\OOP\OOP\obj\Debug\net7.0\OOP.dll
+C:\Users\Pre-Installed User\Desktop\OOP\OOP\obj\Debug\net7.0\refint\OOP.dll
+C:\Users\Pre-Installed User\Desktop\OOP\OOP\obj\Debug\net7.0\OOP.pdb
+C:\Users\Pre-Installed User\Desktop\OOP\OOP\obj\Debug\net7.0\OOP.genruntimeconfig.cache
+C:\Users\Pre-Installed User\Desktop\OOP\OOP\obj\Debug\net7.0\ref\OOP.dll
