@@ -67,7 +67,7 @@ public class RandomEncounter
         Console.WriteLine("You start to drink the tea.");
 
         Random random = new Random();
-        int eventOutcome = random.Next(1, 3);
+        int eventOutcome = random.Next(1, 2);
 
         switch (eventOutcome)
         {
