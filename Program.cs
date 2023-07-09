@@ -10,15 +10,13 @@ public class RandomEncounter
 {
     private static bool isGameOver;
     private static int playerHealth;
-    private static int intWait;
-    private static bool appearChongChingChong;    
+    private static int intWait;  
 
     public void RaehTaleGames()
     {
         isGameOver = false;
         playerHealth = 100;
         intWait = 1;
-        appearChongChingChong = false;
     }
 
     static void Main()
@@ -42,7 +40,7 @@ public class RandomEncounter
                     break;
                 case "2":
                     Wait();
-                    break;
+                    continue;
                 case "3":
                     QuitGame();
                     break;
@@ -88,13 +86,8 @@ public class RandomEncounter
         intWait += 1;
         if (intWait == 5)
         {
-            appearChongChingChong = true;
             Console.WriteLine("Jaechongchingchong has appeared and taken your tea! Oh no!");
-        }
-        else
-        {
-            appearChongChingChong = true;
-            Console.WriteLine("You have won the game. Congratulations!");
+            isGameOver = true;
         }
     }
 
