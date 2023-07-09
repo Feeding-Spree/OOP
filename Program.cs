@@ -1,13 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
+using System.Net;
+using System.Net.Mime;
 
-public class RaehTaleGames
+namespace RaehTaleGames
+{
+public class RandomEncounter
 {
     private static bool isGameOver;
     private static int playerHealth;
     private static int intWait;
     private static bool appearChongChingChong;    
 
-    public RaehTaleGames()
+    public void RaehTaleGames()
     {
         isGameOver = false;
         playerHealth = 100;
@@ -44,15 +50,15 @@ public class RaehTaleGames
                     Console.WriteLine("Invalid input. Please try again.");
                     break;
             }
-            if (playerHealth > 0)
+            if (playerHealth <= 0)
             {
                 isGameOver = true;
-                Console.WriteLine("You have won the game. Congratulations!");
+                Console.WriteLine("You have been defeated. Game over!");
             }
             else
             {
                 isGameOver = true;
-                Console.WriteLine("You have been defeated. Game over!");
+                Console.WriteLine("You have won the game. Congratulations!");
             }
     }
 
@@ -71,7 +77,7 @@ public class RaehTaleGames
             case 2:
                 Console.WriteLine("You found out that the tea contained a mild poison!");
                 playerHealth -= 100;
-                Console.WriteLine("You lose 100 health.");
+                Console.WriteLine("You lose 20 health.");
                 break;
         }
     }
@@ -87,6 +93,7 @@ public class RaehTaleGames
         }
         else
         {
+            appearChongChingChong = true;
             Console.WriteLine("You have won the game. Congratulations!");
         }
     }
@@ -96,5 +103,6 @@ public class RaehTaleGames
         isGameOver = true;
         Console.WriteLine("Thank you for playing!");
     }
+}
 }
 }
