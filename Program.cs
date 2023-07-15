@@ -15,41 +15,45 @@ namespace OOP
         static void Main()
         {
             Console.WriteLine("Welcome to the RaehTale Games!");
-
-            while (!isGameOver)
+            while (!isGameOver == true)
             {
-                Console.WriteLine("Before you is a cup of tea.");
-                Console.WriteLine("Choose an action:");
-                Console.WriteLine("1. Drink the tea");
-                Console.WriteLine("2. Wait");
-                Console.WriteLine("3. Quit the game");
+                    Functions.Introduction();
 
-                string input = Console.ReadLine();
+                while (!isGameOver)
+                    {
+                        Console.WriteLine("Before you is a cup of tea, prepared to you by your host, Jandel Monte.");
+                        Console.WriteLine("Choose an action:");
+                        Console.WriteLine("1. Drink the tea");
+                        Console.WriteLine("2. Wait");
+                        Console.WriteLine("3. Quit the game");
 
-                switch (input)
-                {
-                    case "1":
-                        Functions.DrinkTea();
-                        break;
-                    case "2":
-                        Functions.Wait();
-                        continue;
-                    case "3":
-                        Functions.QuitGame();
-                        break;
-                    default:
-                        Console.WriteLine("Invalid input. Please try again.");
-                        break;
-                }
-                if (playerHealth <= 0)
-                {
-                    isGameOver = true;
-                    Console.WriteLine("Game over!");
-                }
-                else
-                {
-                    isGameOver = true;
-                    Console.WriteLine("You have won the game. Congratulations!");
+                    string input = Console.ReadLine();
+
+                    switch (input)
+                    {
+                        case "1":
+                            Functions.DrinkTea();
+                            break;
+                        case "2":
+                            Functions.Wait();
+                            continue;
+                        case "3":
+                            Functions.QuitGame();
+                            break;
+                        default:
+                            Console.WriteLine("Invalid input. Please try again.");
+                            break;
+                    }
+                    if (playerHealth <= 0)
+                    {
+                        isGameOver = true;
+                        Console.WriteLine("Game over!");
+                    }
+                    else
+                    {
+                        isGameOver = true;
+                        Console.WriteLine("You have won the game. Congratulations!");
+                    }
                 }
             }
         }
