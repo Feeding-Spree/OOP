@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Net;
@@ -8,10 +8,10 @@ namespace OOP
 {
     public class Game
     {
-        public static bool isGameOver;
-        public static int playerHealth;
-        public static int intWait;
-        public static int intTeaDrink;
+        private static bool isGameOver;
+        private static int playerHealth;
+        private static int intWait;
+        private static int intTeaDrink;
         static void Main()
         {
             Console.WriteLine("Welcome to the RaehTale Games!");
@@ -29,20 +29,21 @@ namespace OOP
 
                     string input = Console.ReadLine();
 
+                    List<string> events = new List<string> { "Drink", "Wait", "Quit Game" };
                     switch (input)
                     {
-                        case "1":
+                        case "Drink":
                             Functions.DrinkTea();
                             break;
-                        case "2":
+                        case "Wait":
                             Functions.Wait();
                             continue;
-                        case "3":
+                        case "Quit Game":
                             Functions.QuitGame();
                             break;
                         default:
                             Console.WriteLine("Invalid input. Please try again.");
-                            break;
+                            continue;
                     }
                     if (playerHealth <= 0)
                     {

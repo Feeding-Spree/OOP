@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Net;
 using System.Text;
 
@@ -67,11 +68,11 @@ namespace OOP
 
                 switch (input2)
                 {
-                    case "1":
+                    case "Yes":
                         Console.WriteLine("You continue to drink the tea!");
                         intTeaDrink += 1; 
                         break;
-                    case "2":
+                    case "No":
                         Console.WriteLine("You left the tea where it is.");
                         Console.WriteLine("The tea has gone cold and you dispose it.");
                         isGameOver = true;
@@ -103,7 +104,6 @@ namespace OOP
                 isGameOver = true;
             }
         }
-
         public static void QuitGame()
         {
             isGameOver = true;
